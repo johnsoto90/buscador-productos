@@ -1,0 +1,183 @@
+.titulo {
+  text-align: center;
+}
+.searchbar {
+  justify-content: center !important;
+}
+.input{
+
+
+}
+.flashing {
+  animation: 1s ease-in-out flashing;
+  animation-iteration-count: infinite;
+}
+.modal {
+  display: block;
+  align-items: center;
+}
+.options {
+}
+.hero-header {
+}
+.like-button{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+.like-delete{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 100%;
+  margin: 0.5rem;
+  border: 1px solid silver;
+  background-color: white;
+  color: black !important;
+} 
+.delete:focus, .delete:active, .delete:hover{
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+}
+.delete{
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  max-width: 2.5rem !important;
+  max-height: 2.5rem !important;
+}
+.like-delete:after, .like-delete:before{
+  background-color: black;
+}
+.is-circle{
+  border-radius: 100%;
+}
+.brand{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 32px;
+
+}
+.brand > img {
+  width: 128px;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.searchbar-control {
+  width: 60%;
+}
+.store-logo {
+  width: 100px;
+  height: 40px;
+  object-fit: cover;
+}
+.contador-favoritos{
+  background-color: #db0847;
+  color: white;
+  border-radius: 100%;
+  font-size: 0.8em;
+  width: 20px;
+  height: 20px;
+  margin-left: 0.10rem;
+
+}
+.contador-resultados{
+  background-color: #e0e0e0;
+  border-radius: 100%;
+  font-size: 0.8em;
+  padding: 0.20rem;
+  margin-left: 0.10rem;
+
+}
+.price-logo {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.price-logo > span {
+  margin-left: 0.5rem;
+}
+.card {
+  width: 19.75rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  animation: 0.5s ease-in-out fade;
+}
+.image {
+  height: 15rem;
+  overflow: hidden;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.image > img{
+  max-height: 15rem;
+  object-fit: contain;
+}
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.icon {
+ background-image: url('./img/lupa.png');
+ width: 32px;
+ height: 32px;
+ background-size: 16px 16px;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+.center {
+  justify-content: center;
+}
+.info-color {
+  background-color: #1496ed !important;
+}
+.label {
+  margin-right: 10px;
+}
+.tags {
+  margin-bottom: 0.5rem !important;
+}
+@keyframes flashing {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes breath {
+  0% {
+    top: -0.2rem;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: -0.2rem;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

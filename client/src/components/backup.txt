@@ -1,0 +1,44 @@
+constructor(props) {
+    super(props);
+    this.state = {
+      query: "",
+      input_value: "",
+      orderby: "",
+      categories: [
+        "Tecnologia",
+        "Salud",
+        "Deportes",
+        "Electrodomesticos",
+        "Herramientas",
+        "Oficina",
+        "Libros",
+        "Musica",
+        "Mascotas"
+      ],
+      stores: ["mercadolibre", "yapo", "pcfactory", "spdigital"],
+      regiones: [
+        "Arica y Parinacota",
+        "Tarapacá",
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo",
+        "Valparaíso",
+        "Metropolitana de Santiago",
+        "Libertador General Bernardo O'Higgins",
+        "Maule",
+        "Ñuble",
+        "Biobío",
+        "Araucanía",
+        "Ríos",
+        "Los Lagos",
+        "Aysén del General Carlos Ibáñez del Campo",
+        "Magallanes y de la Antártica Chilena"
+      ],
+      yapo: { is_active: true },
+      mercadolibre: { is_active: true },
+      pcfactory: { is_active: true },
+      spdigital: { is_active: true },
+      options: false
+    };
+  }
+ 
