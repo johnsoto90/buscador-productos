@@ -4,9 +4,9 @@ const controllers = require("./control/GetProducts.js");
 const bodyParser = require("body-parser");
 const path = require("path");
 const app = express();
-const port = 8080;
+const port = process.env.PORT;
 
-//app.use(cors());
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -35,7 +35,6 @@ app.post("/search", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on ${port}!`);
+  console.log(`Running on port ${port}!`);
 });
 
-//Run app, then load http://localhost:port in a browser to see the output.
