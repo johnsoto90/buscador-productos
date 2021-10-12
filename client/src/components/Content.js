@@ -12,7 +12,6 @@ import {
   Notification
 } from "reactbulma";
 
-
 export default class content extends Component {
   constructor(props) {
     super(props);
@@ -86,12 +85,15 @@ export default class content extends Component {
       let price = item.price === "" ? "0.00" : item.price;
       //if (price == 0) return;
       let image =
-        item.image === "/img/transparent.gif" || item.image === undefined
-          ? "http://noticiasnet.com.ar/latiendanet/oc-content/themes/osclasswizards/images/no_photo.gif"
+        item.image === "/img/transparent.gif" ||
+        item.image === undefined ||
+        item.image === ""
+          ? "http://placekitten.com/1024/1024"
           : item.image;
+      console.log(item.image);
       return (
         <Card className="card">
-          <Card.Image src={image}/>
+          <Card.Image src={image} />
           <Button className="like-button">❤️</Button>
           <Card.Content>
             <Content>
@@ -111,11 +113,12 @@ export default class content extends Component {
         </Card>
       );
     });
-    
+
     const progreso =
       this.props.progress === 0 ? (
         <span>
-          <strong> ({parsed.length})</strong> Resultados para: <strong>{this.props.query}</strong>
+          <strong> ({parsed.length})</strong> Resultados para:{" "}
+          <strong>{this.props.query}</strong>
         </span>
       ) : (
         <strong className="flashing">

@@ -33,8 +33,10 @@ class Content extends Component {
         return;
 
       let image =
-        item.image === "/img/transparent.gif" || item.image === undefined
-          ? "http://noticiasnet.com.ar/latiendanet/oc-content/themes/osclasswizards/images/no_photo.gif"
+        item.image === "/img/transparent.gif" ||
+        item.image === undefined ||
+        item.image === ""
+          ? "http://lorempixel.com/512/512/cats/Imagen-No-Encontrada"
           : item.image;
       return (
         <Producto
